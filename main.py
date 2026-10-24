@@ -26,9 +26,9 @@ def calculate_status(row, subjects):
 
 def load_data():
     try:
-        df = pd.read_csv("students.csv")
+        df = pd.read_csv("Students-Performance-Analytics.csv")
     except FileNotFoundError:
-        print("Error: students.csv file not found!")
+        print("Error: Students-Performance-Analytics.csv file not found!")
         raise SystemExit(1)
 
     required_columns = [

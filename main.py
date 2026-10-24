@@ -1,4 +1,3 @@
-
 import numpy as np
 import pandas as pd
 
@@ -27,7 +26,7 @@ def calculate_status(row, subjects):
 
 def load_data():
     try:
-        df = pd.read_csv("student_analysis_results.csv")
+        df = pd.read_csv("students.csv")
     except FileNotFoundError:
         print("Error: students.csv file not found!")
         raise SystemExit(1)
